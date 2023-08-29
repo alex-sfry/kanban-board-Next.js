@@ -1,0 +1,32 @@
+.wrapper {
+	min-height: 100vh;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+}
+
+.main {
+    font-family: inherit;
+	height: calc(100vh - 110px);
+	background-color: #0079BF;
+	padding: 20px 15px 32px;
+}
+
+@media all and (max-width: 1230px) {
+	.main {
+		height: 100%;
+		min-height: 100vh;
+	}
+}
+
+@media all and (max-width: 1230px) {
+	.main {
+		height: 100%;
+		min-height: 100vh;
+	}
+}
+
+@media all and (max-width: 1230px) {
+	.wrapper {
+		height: fit-content;		
+	}
+}

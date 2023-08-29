@@ -1,0 +1,23 @@
+.form {
+    font-family: inherit;
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+}
+
+.input {
+	background: none;
+	outline: 0;
+	border: none;
+	width: 100%;
+	background-color: #FFFFFF;
+	border-radius: 5px;
+	padding: 7px 8px;
+	height: 35px;
+}
+
+.input, .input::placeholder {
+	font-family: inherit;
+	font-weight: inherit;
+	font-size: inherit;
+}

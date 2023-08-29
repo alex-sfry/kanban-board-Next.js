@@ -1,0 +1,77 @@
+.btn {
+	cursor: pointer;
+	width: 102px;
+	height: 29px;
+	border: none;
+	border-radius: 5px;
+	background: #EBECF0;
+	font-family: inherit;
+	font-weight: inherit;
+	font-size: 18px;
+	line-height: 21px;	
+}
+
+.btn:hover:not(.btnAdd[disabled], .btnSubmit) {
+	background: #FFFFFF;
+}
+
+.btnAdd[disabled] {
+	z-index: -100;
+}
+
+.btnAdd {
+	color: #5E6C84;
+}
+
+.btnAdd[disabled] {
+	opacity: 0.5;
+	cursor: auto;
+}
+
+.btnHidden {
+	display: none;
+}
+
+.btnSubmit {
+	background: #0079BF;
+	color: #FFFFFF;
+}
+
+.btnClose {
+	position: absolute;
+	top: 17px;
+	right: 23px;
+	width: 23px;
+	height: 23px;
+	background: none;
+	border: none;
+	cursor: pointer;
+	padding-bottom: 1px;
+}
+
+.btnEdit {
+	background: none;
+	width: 64px;
+	height: 18px;
+	font-size: 14px;
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+@media (hover: none) {
+	.btn, .btnClose {
+		cursor: auto;		
+	}
+
+	.btn:hover:not(.btnAdd[disabled], .btnSubmit) {
+		background: none;
+	}
+}
+
+@media all and (max-width: 430px) {
+	.btnClose {
+		top: 12px;
+		right: 8px;
+		width: 16px;
+		height: 16px;
+	}
+}

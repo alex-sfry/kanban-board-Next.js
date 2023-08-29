@@ -1,0 +1,44 @@
+.footer {
+    font-family: inherit;
+	background-color: #0067A3;
+	height: 55px;
+	width: 100%;
+	color: #FFFFFF;
+}
+
+.container {
+	max-width: 1235px;
+	height: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 auto;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 21px;
+	color: #FFFFFF;
+}
+
+.counter {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 36px;	
+}
+
+@media all and (max-width: 920px) {
+	.counter {
+		gap: 6px;
+	}	
+}
+
+@media all and (max-width: 1230px) {
+	.container {
+		padding: 0px 10px 0px 10px;
+	}
+}
+
+@media all and (max-width: 280px) {
+	.container {
+		font-size: 16px;
+	}
+}

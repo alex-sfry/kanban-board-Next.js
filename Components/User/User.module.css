@@ -1,0 +1,90 @@
+.user {
+    font-family: inherit;
+	width: 64px;
+	height: 100%;
+	position: relative;
+}
+
+.images {
+	cursor: pointer;
+	height: 40px;
+	margin: 7px 0px;
+	-webkit-tap-highlight-color: transparent;
+}
+
+.avatar {
+	border-radius: 50%;
+	background: #FFFFFF;
+}
+
+.arrow {
+	position: absolute;
+	top: 23px;
+	right: 7px;
+	transition: all 200ms linear;
+}
+
+.userMenu {
+	z-index: 1;
+	background: #FFFFFF;
+	border: none;
+	border-radius: 5px;
+	width: 134px;
+	padding: 8px 7px;
+	color: #000000;
+	display: flex;
+	flex-direction: column;
+	gap: 3px;
+	position: absolute;
+	top: 58px;
+	right: 0px;
+	height: 60px;
+	visibility: hidden;
+	opacity: 0;
+	transform-origin: 0 0;
+	transform: rotateX(-90deg);
+	transition: all 200ms linear;
+}
+
+.userMenu::before {
+	content: "";
+	position: absolute;
+	bottom: 100%;
+	right: 36px;
+	margin-left: -8px;
+	border-width: 8px;
+	border-style: solid;
+	border-color: transparent transparent #FFFFFF transparent;
+}
+
+.isOpen {
+	transform: rotateX(0deg);
+	visibility: visible;
+	opacity: 1;
+}
+
+ .isActive {
+	transform: rotate(-180deg);
+}
+
+.menuItem:hover {
+	background: #EBECF0;
+	cursor: pointer;
+}
+
+@media all and (max-width: 420px) {
+	.arrow {
+		right: 5px;		
+	}
+}
+
+@media (hover: none) {
+	.menuItem:hover {
+		cursor: auto;		
+	}
+	
+	.menuItem:hover {
+		background: none;
+		cursor: auto;
+	}
+}
