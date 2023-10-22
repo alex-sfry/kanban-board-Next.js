@@ -37,18 +37,6 @@
 	color: #FFFFFF;
 }
 
-.btnClose {
-	position: absolute;
-	top: 17px;
-	right: 23px;
-	width: 23px;
-	height: 23px;
-	background: none;
-	border: none;
-	cursor: pointer;
-	padding-bottom: 1px;
-}
-
 .btnEdit {
 	background: none;
 	width: 64px;
@@ -58,20 +46,7 @@
 }
 
 @media (hover: none) {
-	.btn, .btnClose {
-		cursor: auto;		
-	}
-
 	.btn:hover:not(.btnAdd[disabled], .btnSubmit) {
 		background: none;
-	}
-}
-
-@media all and (max-width: 430px) {
-	.btnClose {
-		top: 12px;
-		right: 8px;
-		width: 16px;
-		height: 16px;
 	}
 }

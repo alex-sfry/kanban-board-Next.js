@@ -1,8 +1,8 @@
 
 import { useState, useContext } from 'react'
-import Link from 'next/link';
 import css from './TaskDetails.module.css'
-import { Button, Close } from '../../Components/Button/Button'
+import { Button } from '../../Components/Button/Button'
+import LinkButton from '../LinkButton'
 import { TaskList, Issue } from '../../pages/index';
 import { IssueUndef } from '../../pages/index';
 import { boardContext } from '../../context/Context';
@@ -106,9 +106,11 @@ const TaskDetails = () => {
                 <div className={isActive ? `${css.taskDetails} ${css.isEditActive}` : `${css.taskDetails}`}>
                     <h2 className={css.title}>{id && getIssue()[0].name}</h2>
                     {renderConditions()}
-                    <Link href={'/'}>
-                        <Close />
-                    </Link>
+                    <div className={css.closeBtnDiv}>
+                        <LinkButton variant={'crossLarge'} route={'/'}>
+                            <span className={css.close}></span><span className={css.close}></span>
+                        </LinkButton>
+                    </div>
                 </div>
             </div>
         </Layout>

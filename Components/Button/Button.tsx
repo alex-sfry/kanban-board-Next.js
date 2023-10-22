@@ -1,5 +1,4 @@
 import css from './Button.module.css';
-import withCloseCross from '../withCloseCross/withCloseCross';
 
 interface ButtonProps {
     children: any, 
@@ -22,13 +21,4 @@ export const Button = ({ children, btnClass, disabled, handleClick, type }: Butt
 	)
 }
 
-const ButtonCloseWindow = ({ children }: any) => {
-	return (
-		<button className={css.btnClose}>
-			{children}
-		</button>
-	)
-}
-
-export const Close = withCloseCross(ButtonCloseWindow)
 

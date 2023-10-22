@@ -87,6 +87,29 @@
 	height: 100%;
 }
 
+.closeBtnDiv {
+    position: absolute;
+    right: 23px;
+    top: 17px;
+}
+
+.close {
+    font-family: inherit;
+	position: absolute;
+	width: 120%;
+	height: 1px;
+	background-color: #000000;
+	margin-left: -12px;
+}
+
+.close:nth-child(1) {	
+	transform: rotate(-45deg);
+}
+
+.close:nth-child(2) {
+	transform: rotate(-135deg);
+}
+
 @media all and (max-width: 1230px) {
 	.main {
 		height: 100%;
@@ -124,6 +147,11 @@
 	.editDescription::-webkit-scrollbar {
 		width: 8px;
 	}
+
+    .closeBtnDiv {
+        top: 12px;
+		right: 8px;
+    }
 }
 
 @media all and (max-width: 280px) {
@@ -134,4 +162,9 @@
 	.editDescription::-webkit-scrollbar {
 		width: 6px;
 	}
+
+    .closeBtnDiv {
+        top: 12px;
+		right: 8px;
+    }
 }
