@@ -2,7 +2,7 @@
 import { useState, useContext } from 'react'
 import css from './TaskDetails.module.css'
 import { Button } from '../../Components/Button/Button'
-import LinkButton from '../LinkButton'
+import LinkButton from '../LinkButton/LinkButtont'
 import { TaskList, Issue } from '../../pages/index';
 import { IssueUndef } from '../../pages/index';
 import { boardContext } from '../../context/Context';
